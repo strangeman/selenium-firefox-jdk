@@ -13,6 +13,8 @@ RUN apt-get update -qqy \
 
 ENV DISPLAY :99
 
+RUN echo "0572091279cc4f931768953a583795cc" > /etc/machine-id
+
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh
 
